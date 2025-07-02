@@ -1,12 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 nav {
     background-color: darkblue;
-    padding: 10px;
+    padding: 5px;
 }
 
 nav a {
     color: white;
     display: block;
-    padding: 20px;
+    padding: 5px;
 }
 
 h1 {
@@ -20,6 +26,7 @@ main img {
     border: 1px solid black;
     padding: 2px;
     box-shadow: 0 0 30px gray;
+    float: right;
 }
 
 p {
@@ -28,16 +35,14 @@ p {
 
 main {
     max-width: 840px;
+    padding: 15px;
 }
+
 
 aside {
     width: 20rem;
-    margin: 1rem;
-    border: 1px solid;
-    padding: 1rem;
-    background-color: white;
-    color: #333333;
     text-align: center;
+    position: relative;
 }
 
 aside img {
@@ -45,8 +50,39 @@ aside img {
     height: auto;
 }
 
+aside h2 {
+    position: absolute;
+    top: 18px;
+    left: 103px;
+    color: black;
+}
+
 footer {
     margin-top: 15px;
     border-top: 1px solid;
     text-align: center;
 }
+
+
+
+/* Class Selectors */
+
+.box {
+    margin: 1rem;
+    border: 1px solid rgb(0, 0, 0 / 10%);
+    padding: 1rem;
+    background-color: rgba(118, 5, 133, 0.517);
+    color: rgb(255, 255, 255);
+
+}
+
+
+
+/* Colors for rafting website:
+
+primary-color: 
+secondary-color: 
+accent1-color:
+accent2-color: 
+
+*/
