@@ -1,8 +1,10 @@
 :root {
-    --primary-color: #228B22;
+    --primary-color: #1e7b1e;
     --secondary-color: #87CEEB;
-    --accent1-color: #FFA500;
+    --accent1-color: #ffa500;
     --accent2-color: #8B4513;
+    --primary-text: #ffffff;
+    --secondary-text: rgb(13, 13, 215);
     --heading-font: 'Bebas Neue', sans-serif;
     --body-font: 'Roboto', sans-serif;
 }
@@ -16,19 +18,49 @@
 
 header {
     background-color: var(--primary-color);
+    display: grid;
+    align-items: center;
+    grid-template-columns: 100px 1fr;
+}
+
+header nav a {
+    background-color: var(--accent2-color);
+    color: var(--primary-text);
+    padding: 8px 16px;
+    border: 2px solid var(--accent1-color);
+    font-family: var(--body-font);
+    text-decoration: none;
+}
+
+header nav {
+    grid-column: 2 / 3;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+header img {
+    grid-column: 1 / 2;
+    width: 40px;
+    height: 56.54px;
+    justify-self: center;
+    border-radius: 10px;
 }
 
 body {
     font-family: var(--body-font);
-    color: var(--accent1-color);
+    color: var(--primary-text);
 }
 
 
 header,
 main,
 footer {
-    width: 840px;
+    width: 100%;
+    max-width: 840px;
     margin: 0 auto;
+    margin-top: 10px;
 }
 
 
@@ -36,6 +68,8 @@ h1,
 h2 {
     font-family: var(--heading-font);
 }
+
+
 
 nav,
 p,
@@ -68,7 +102,7 @@ h1 {
     text-align: center;
     opacity: 0.8;
     background-color: var(--accent1-color);
-    color: #FFF;
+    color: var(--secondary-text);
     border: 4px solid var(--primary-color);
 }
 
@@ -99,7 +133,71 @@ article p {
 
 
 .flex {
-    display: flex;
-    flex-wrap: wrap;
+    /* display: flex;
+    flex-wrap: wrap; */
 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    background-color: darkblue;
+}
+
+figure {
+    grid-row: 2 / 3;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+
+
+.flex h2 {
+    display: flex;
+    grid-row: 1 / 2;
+    grid-column: 3 / 4;
+}
+
+section {
+    display: grid;
+}
+
+.history {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    background-color: var(--primary-color);
+}
+
+.history h2 {
+    display: flex;
+    text-align: center;
+    justify-self: center;
+    grid-column: 2 / 3;
+}
+
+.history img {
+    grid-column: 2 / 3;
+    align-self: center;
+}
+
+.paragraph1 {
+    grid-column: 1 / 2;
+}
+
+.paragraph2 {
+    grid-column: 3 / 3;
+}
+
+section img {
+    width: 100%;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+}
+
+footer nav {
+    margin-left: auto;
+}
+
+footer p {
+    color: var(--primary-color);
 }

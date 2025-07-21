@@ -31,12 +31,15 @@ footer,
 .grid {
     max-width: 840px;
     margin: 0;
-
 }
 
 .grid {
     display: grid;
     align-items: center;
+}
+
+.flex {
+    max-width: 840px;
 }
 
 
@@ -66,10 +69,6 @@ main img {
 p {
     padding: 0;
 }
-
-
-
-
 
 
 aside img {
