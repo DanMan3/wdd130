@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/poll-form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:ital,wght@0,300;1,300&display=swap"
+        rel="stylesheet">
+    <title>WDD130 | HTML Form - User Poll</title>
+</head>
+
+<body>
+    <header>
+        <h1>WDD130 | Daniel Bennion | HTML Form - User Poll</h1>
+    </header>
+
+    <main>
+        <form>
+            <fieldset>
+                <legend>Contact Information</legend>
+                <div class="form-item column2">
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname">
+                </div>
+                <div class="form-item column2">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="useremail">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Questions</legend>
+                <label for="browser">What is your favorite browser?</label>
+                <div class="form-item column1">
+                    <select name="browser" id="browser" value="browser">
+                        <option value="chrome">Chrome</option>
+                        <option value="firefox">Firefox</option>
+                        <option value="ie">Internet Explorer</option>
+                        <option value="brave">Brave</option>
+                        <option value="edge">Edge</option>
+                        <option value="safari">Safari</option>
+                    </select>
+                </div>
+                <div class="form-item column1">
+                    <label for="pet">Do you have a pet?</label>
+                    <input type="checkbox" id="pet" name="pet"></input>
+                </div>
+                <label for="feedback">List the places you've lived: </label>
+                <textarea name="feedback" id="feedback" rows="4"
+                    placeholder="Salt Lake City Utah, Nashville Tennessee, Tokyo Japan">
+                </textarea>
+            </fieldset>
+            <button type="submit">Submit Poll</button>
+        </form>
+    </main>
+
+
+    <footer>
+        <p>© 2025 HTML Form - User Poll Activity | Daniel Bennion</p>
+    </footer>
+
+
+</body>
+
+</html>
