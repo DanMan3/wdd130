@@ -25,7 +25,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding-left: 50px;
-    padding-right: 200px;
+    padding-right: 25px;
 }
 
 header nav a {
@@ -40,7 +40,7 @@ header nav a {
 
 header nav {
     display: flex;
-    gap: 40px;
+    gap: 20px;
 }
 
 header img {
@@ -96,6 +96,9 @@ article {
     text-decoration: none;
 }
 
+.socialmedia img {
+    width: 15px;
+}
 
 .hero {
     position: relative;
@@ -205,15 +208,19 @@ section img {
 footer {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
-footer nav {
-    margin-left: auto;
+.socialmedia {
+    display: flex;
+    gap: 8px;
 }
 
 footer p {
     color: var(--primary-color);
+    font-size: 12px;
 }
+
 
 
 /* Form Declarations */
