@@ -26,6 +26,8 @@ header {
     align-items: center;
     padding-left: 50px;
     padding-right: 25px;
+    box-shadow: 0 0 8px 0 rgb(0 0 0 / 0.4);
+    border-radius: 3px;
 }
 
 header nav a {
@@ -48,7 +50,17 @@ header img {
     width: 40px;
     height: 56.54px;
     justify-self: center;
-    border-radius: 10px;
+}
+
+.company-branding-header {
+    font-family: var(--heading-font);
+    font-size: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.company-name-header {
+    align-self: center;
 }
 
 body {
@@ -227,7 +239,7 @@ footer p {
 
 
 
-/* Form Declarations */
+/* "Message Us" Form Declarations */
 
 form {
     width: 350px;
@@ -268,13 +280,21 @@ button {
     color: var(--primary-text);
     font-family: var(--heading-font);
     background-color: var(--form-submit);
-    width: 70px;
-    height: 20px;
     align-self: end;
     border: none;
 }
 
-button:focus {
+button:active {
+    background-color: var(--secondary-color);
+}
+
+.send-message {
+    width: 70px;
+    height: 20px;
+
+}
+
+.send-message:hover {
     background-color: var(--secondary-color);
 }
 
@@ -373,3 +393,91 @@ footer .wireframe {
     font-size: 14px;
     font-family: var(--body-font);
 }
+
+
+/* Home page declarations */
+
+.explore-adventures {
+    height: 20px;
+    width: 100px;
+    font-size: 12px;
+}
+
+.home-main {
+    color: var(--primary-text);
+}
+
+.home-companysection {
+    display: grid;
+    gap: 1rem;
+}
+
+
+.home-companyinfo {
+    grid-column: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+}
+
+.home-companyinfo p {
+    font-size: 12px;
+}
+
+.home-company-images {
+    display: flex;
+    flex-direction: row;
+    font-size: 10px;
+    font-family: var(--heading-font);
+    max-width: 400px;
+    max-height: 260px;
+}
+
+
+.home-title {
+    position: absolute;
+}
+
+.home button {
+    position: absolute;
+    bottom: 100px;
+    left: 372px;
+    background-color: var(--accent1-color);
+    color: var(--secondary-text);
+    box-shadow: 0 0 4px 0 rgb(0 0 0 / 0.6);
+}
+
+.home button:active {
+    background-color: var(--secondary-text);
+}
+
+.home button:hover {
+    background-color: var(--secondary-color);
+}
+
+.card h3 {
+    align-self: center;
+    color: var(--form-primary);
+}
+
+.contact-homepage-link {
+    color: var(--primary-text);
+}
+
+.contact-homepage-link:hover {
+    color: var(--secondary-color);
+}
+
+.home-img {
+    max-height: 112px;
+    max-width: auto;
+}
+
+.home-company-images figcaption {
+    text-align: center;
+}
+
+
+/* Newsletter form declarations */
