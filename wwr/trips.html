@@ -16,7 +16,10 @@
 
 <body>
     <header>
-        <img src="images/logo.jpg" alt="Nile Rafting Adventures logo">
+        <div class="company-branding-header">
+            <img src="images/logo.jpg" alt="Nile Rafting Adventures logo">
+            <p class="company-name-header">Nile Rafting Adventures</p>
+        </div>
         <nav>
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
@@ -24,8 +27,120 @@
             <a href="contact.html">Contact Us</a>
         </nav>
     </header>
-    <main>
+    <main class="trips-main">
+        <div class="hero trips">
+            <h1 class="trips-title">Rafting Adventures</h1>
+            <img src="images/main-hero.jpg" alt="Rafting Adventure Highlight">
+            <button class="explore-adventures" onclick="window.location.href='contact.html'">Contact Us</button>
+        </div>
 
+        <div class="rafting-summary">
+            <h2>Rafting Adventures Summary</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Trip Name</th>
+                        <th>Duration</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Cataract Canyon</td>
+                        <td>2 days</td>
+                        <td>$650</td>
+                    </tr>
+                    <tr>
+                        <td>Grand Rapids</td>
+                        <td>1 day</td>
+                        <td>$400</td>
+                    </tr>
+                    <tr>
+                        <td>Family Fun Run</td>
+                        <td>1 day</td>
+                        <td>$350</td>
+                    </tr>
+                    <tr>
+                        <td>Extreme Whitewater</td>
+                        <td>3 days</td>
+                        <td>$950</td>
+                    </tr>
+                    <tr>
+                        <td>Custom Adventure</td>
+                        <td>Custom duration</td>
+                        <td>Contact us</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="adventures-options">
+            <div class="trips-adventure1 card trips-card">
+                <p class="adventures-title">Cataract Canyon</p>
+                <img src="images/trip1.jpg" class="trips-image" alt="Cataract Canyon">
+                <p class="adventures-location">
+                    Location: <span class="trips-details-text">Colorado River</span>
+                </p>
+                <p class="adventures-difficulty">
+                    Difficulty: <span class="trips-details-text">Moderate</span>
+                </p>
+                <p class="adventures-cost">
+                    Cost: <span class="trips-details-text">$650</span>
+                </p>
+            </div>
+            <div class="trips-adventure2 card trips-card">
+                <p class="adventures-title">Grand Rapids</p>
+                <img src="images/trip2.jpg" class="trips-image" alt="Grand Rapids">
+                <p class="adventures-location">
+                    Location: <span class="trips-details-text">Nile Tributary</span>
+                </p>
+                <p class="adventures-difficulty">
+                    Difficulty: <span class="trips-details-text">Easy</span>
+                </p>
+                <p class="adventures-cost">
+                    Cost: <span class="trips-details-text">$400</span>
+                </p>
+            </div>
+            <div class="trips-adventure3 card trips-card">
+                <p class="adventures-title">Family Fun Run</p>
+                <img src="images/trip3.jpg" class="trips-image" alt="Family Fun Run">
+                <p class="adventures-location">
+                    Location: <span class="trips-details-text">Gentle River</span>
+                </p>
+                <p class="adventures-difficulty">
+                    Difficulty: <span class="trips-details-text">Easy</span>
+                </p>
+                <p class="adventures-cost">
+                    Cost: <span class="trips-details-text">$350</span>
+                </p>
+            </div>
+            <div class="trips-adventure4 card trips-card">
+                <p class="adventures-title">Custom Adventure</p>
+                <img src="images/trip5.jpg" class="trips-image" alt="Custom Adventure">
+                <p class="adventures-location">
+                    Location: <span class="trips-details-text">Your Pick</span>
+                </p>
+                <p class="adventures-difficulty">
+                    Difficulty: <span class="trips-details-text">Your Level</span>
+                </p>
+                <p class="adventures-cost">
+                    Cost: <span class="trips-details-text">Contact us</span>
+                </p>
+            </div>
+            <div class="trips-adventure5 card trips-card">
+                <p class="adventures-title row2">Extreme Whitewater</p>
+                <img src="images/trip4.jpg" class="trips-image" alt="Extreme Whitewater">
+                <p class="adventures-location">
+                    Location: <span class="trips-details-text">Remote Canyon</span>
+                </p>
+                <p class="adventures-difficulty">
+                    Adventure Difficulty: <span class="trips-details-text">Hard</span>
+                </p>
+                <p class="adventures-cost">
+                    Cost: <span class="trips-details-text">$950</span>
+                </p>
+            </div>
+        </div>
     </main>
 
     <footer>
